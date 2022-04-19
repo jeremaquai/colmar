@@ -15,12 +15,22 @@ html {
         /* Style desktop header */
 
         .desktop-header-container {
-            display: flexbox;
+            display: flex;
             height: 4rem;
+            justify-content: space-around;
+            align-content: space-between;
+            text-align: center;
+        }
+
+        .desktop-header-container .logo-icon-container {
+            height: 2rem;
         }
     
-}
-
+        .desktop-header-container .logo-icon-container span {
+            
+            font-size: 1.5rem;
+        }
+    }
 
 
 /* Mobile Styles */
@@ -43,7 +53,7 @@ html {
             height: 4rem;
         }
 
-        .logo-icon-container {
+        .mobile-header-container .logo-icon-container {
             height: 2rem;
             display: inline-flex;
         }
