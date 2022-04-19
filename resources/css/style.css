@@ -5,6 +5,7 @@ html {
 
 h2 {
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -82,7 +83,7 @@ h3 {
         .large-photo-container img {
             object-fit: fill;
             width: 100%;
-            flex: auto;
+            align-self: center;
         }
 
         /*text and button side*/
@@ -148,5 +149,46 @@ h3 {
         .login-icon-container {
             height: 2rem;
             display: inline-flex;
+        }
+
+        /*stlye mobile learning section*/
+
+        /*gray box*/
+        .learning {
+            display: flex;
+            flex-direction: column;
+            background-color: lightgray;
+            width: 100%;
+        }
+
+        /*photo*/
+        .large-photo-container {
+            display: inline-flex;
+            width: 100%;
+        }
+
+        .large-photo-container img {
+            object-fit: fill;
+            width: 100%;
+        }
+
+        /*text section*/
+        .learning-text-container {
+            display: inline-flex;
+            flex-direction: column;
+            padding: 2rem 1rem;
+        }
+
+        /*start here button*/
+        .learning-text-container .start-button {
+            background-color: darkgray;
+            width: 85%;
+            text-align: center;
+            padding: .5rem;
+        }
+
+        .learning-text-container .start-button a {
+            text-decoration: none;
+            color: white;
         }
 }
