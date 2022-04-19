@@ -15,9 +15,9 @@ h3 {
 /* Desktop styles */
 @media only screen and (min-width: 480px) {
 
-        /* hide mobile header */
+        /* hide mobile sections of code */
 
-        .mobile-header-container {
+        .mobile-header-container, .mobile-information {
             display: none;
         }
 
@@ -68,7 +68,6 @@ h3 {
         .learning {
             display: flex;
             width: 100%;
-            height: fit-content;
             background-color: lightgray;
         }
 
@@ -115,9 +114,9 @@ h3 {
 
 @media only screen and (max-width: 480px) {
 
-        /* hide desktop header */
+        /* hide desktop versions of code or sections coded just for desktop viewing */
 
-        .desktop-header-container {
+        .desktop-header-container, .desktop-information {
             display: none;
 
         }
