@@ -4,8 +4,7 @@ html {
 }
 
 /* Desktop styles */
-@media only screen 
-    and (min-width: 480px) {
+@media only screen and (min-width: 480px) {
 
         /* hide mobile header */
 
@@ -26,8 +25,7 @@ html {
 
 /* Mobile Styles */
 
-@media only screen 
-    and (max-width: 480) {
+@media only screen and (max-width: 480px) {
 
         /* hide desktop header */
 
@@ -39,6 +37,29 @@ html {
         /* style mobile header */
 
         .mobile-header-container {
-            display: flexbox;
+            display: flex;
+            
+            justify-content: space-around;
+            height: 4rem;
+        }
+
+        .logo-icon-container {
+            height: 2rem;
+            display: inline-flex;
+        }
+
+        .campus-icon-container {
+            height: 2rem;
+            display: inline-flex;
+        }
+
+        .online-icon-container {
+            height: 2rem;
+            display: inline-flex;
+        }
+
+        .login-icon-container {
+            height: 2rem;
+            display: inline-flex;
         }
     }
