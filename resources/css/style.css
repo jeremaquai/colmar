@@ -5,11 +5,20 @@ html {
 
 h2 {
     font-size: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 h3 {
     font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 a {
@@ -118,6 +127,7 @@ a {
             width: 100%;
         }
 
+        /* left side of information section*/
         .desktop-information .left-side-container {
             display: inline-flex;
             flex-direction: column;
@@ -132,14 +142,15 @@ a {
             padding-left: 1.5rem;
         }
 
+        .desktop-information .left-side-container .large-photo-container {
+            width: 85%;
+        }
+
+        /* right side of information section*/
         .desktop-information .right-side-container {
             display: flex;
             flex-direction: column;
             width: 40%;
-        }
-
-        .desktop-information .left-side-container .large-photo-container {
-            width: 85%;
         }
 
         .desktop-information .right-side-container .right-side-container-contents {
@@ -164,16 +175,42 @@ a {
             padding: 1rem;
         }
 
-        .contents-text-container h3 {
-            font-size: 1.5rem;
-        }
-
-        .contents-text-container h4 {
-            font-size: 1rem;
-        }
-
 
         .contents-photo-container img {
+            object-fit: fill;
+            width: 100%;
+            align-self: center;
+        }
+
+        /* Courses Section*/
+
+        .desktop-courses-section {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        .course-list-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-left: 4.5rem;
+            padding-right: 4.5rem;
+        }
+
+        .course-container {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: left;
+            width: 30%;
+            padding: 1rem;
+        }
+
+        .course-photo-container {
+            display: flex;
+        }
+
+        .course-photo-container img {
             object-fit: fill;
             width: 100%;
             align-self: center;
@@ -199,14 +236,15 @@ a {
 
         .mobile-header-container {
             display: flex;
-            
+            align-content: center;
             justify-content: space-around;
             height: 4rem;
         }
 
-        .mobile-header-container .logo-icon-container {
-            height: 2rem;
-            display: inline-flex;
+        .mobile-header-container 
+            .logo-icon-container {
+                height: 2rem;
+                display: inline-flex;
         }
 
         .campus-icon-container {
@@ -298,5 +336,33 @@ a {
             flex-direction: column;
             padding-bottom: 2rem;
             padding-left: 1rem;
+        }
+
+        /* Mobile Courses Section*/
+        .mobile-courses-section {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        .mobile-course-header-text {
+            text-align: center;
+        }
+
+        .mobile-couse-list {
+            margin-top: 1.5rem;
+        }
+
+        .mobile-course-box {
+            background-color: lightgray;
+            margin: .5rem;
+            padding: 1rem;
+
+        }
+
+        .mobile-course-box a {
+            padding: 1rem;
+            color: black;
+            font-size: 1.5rem;
         }
 }
