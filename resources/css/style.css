@@ -21,7 +21,9 @@ a {
 
         /* hide mobile sections of code */
 
-        .mobile-header-container, .mobile-information {
+        .mobile-header-container, 
+        .mobile-information,
+        .mobile-courses-section {
             display: none;
         }
 
@@ -186,7 +188,9 @@ a {
 
         /* hide desktop versions of code or sections coded just for desktop viewing */
 
-        .desktop-header-container, .desktop-information {
+        .desktop-header-container, 
+        .desktop-information,
+        .desktop-courses-section {
             display: none;
 
         }
