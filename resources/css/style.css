@@ -152,10 +152,24 @@ h3 {
         }
 
         .contents-text-container {
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
+            
             width: 65%;
+            height: 80%;
             padding: 1rem;
+        }
+
+        .contents-text-container h3 {
+            font-size: 1.5rem;
+        }
+
+        .contents-text-container h4 {
+            font-size: 1rem;
+        }
+
+        .contents-text-container a {
+            text-decoration: none;
         }
 
         .contents-photo-container img {
