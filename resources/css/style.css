@@ -12,6 +12,10 @@ h3 {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Desktop styles */
 @media only screen and (min-width: 480px) {
 
@@ -58,7 +62,6 @@ h3 {
         .desktop-header-container .nav a {
             font-size: 1.25rem;
             padding: .5rem;
-            text-decoration: none;
             color: gray;
         }
 
@@ -103,7 +106,6 @@ h3 {
         }
 
         .learning-text-container .start-button a {
-            text-decoration: none;
             color: white;
             padding: .5rem;
         }
@@ -168,9 +170,6 @@ h3 {
             font-size: 1rem;
         }
 
-        .contents-text-container a {
-            text-decoration: none;
-        }
 
         .contents-photo-container img {
             object-fit: fill;
@@ -258,7 +257,42 @@ h3 {
         }
 
         .learning-text-container .start-button a {
-            text-decoration: none;
             color: white;
+        }
+
+        /*mobile information section styles*/
+        .mobile-information {
+            width: 100%;
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        .mobile-information-contents {
+            display: inline-flex;
+            flex-direction: column;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        /*mobile information section phote styles*/
+        .mobile-information-contents-photo-container {
+            display: inline-flex;
+            width: 100%;
+        }
+
+        .mobile-information-contents-photo-container img {
+            object-fit: fill;
+            width: 100%;
+            align-self: center;
+        }
+
+        /* mobile information section text container styles*/
+        .mobile-information-contents-text-container {
+            display: inline-flex;
+            flex-direction: column;
+            padding-bottom: 2rem;
+            padding-left: 1rem;
         }
 }
