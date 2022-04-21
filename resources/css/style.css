@@ -32,7 +32,8 @@ a {
 
         .mobile-header-container, 
         .mobile-information,
-        .mobile-courses-section {
+        .mobile-courses-section,
+        .mobile-thesis-section {
             display: none;
         }
 
@@ -89,7 +90,7 @@ a {
         /*should control two photos in two sections*/
         .large-photo-container {
             display: inline-flex;
-            width: 60%;
+            max-width: 60%;
             padding: 2rem 2rem;
         }
 
@@ -102,7 +103,7 @@ a {
         /*text and button side*/
         .learning-text-container {
             display: inline-flex;
-            width: 40%;
+            max-width: 40%;
             flex-direction: column;
             align-items: center;
             padding: 2rem;
@@ -131,7 +132,7 @@ a {
         .desktop-information .left-side-container {
             display: inline-flex;
             flex-direction: column;
-            width: 60%;
+            max-width: 60%;
             align-content: center;
             justify-content: center;
         }
@@ -143,14 +144,15 @@ a {
         }
 
         .desktop-information .left-side-container .large-photo-container {
-            width: 85%;
+            max-width: 100%;
+            display: flex;
         }
 
         /* right side of information section*/
         .desktop-information .right-side-container {
             display: flex;
             flex-direction: column;
-            width: 40%;
+            max-width: 40%;
         }
 
         .desktop-information .right-side-container .right-side-container-contents {
@@ -161,7 +163,7 @@ a {
 
         .contents-photo-container {
             display: flex;
-            width: 35%;
+            max-width: 35%;
             height: auto;
             padding: 1rem;
         }
@@ -170,7 +172,7 @@ a {
             display: inline-flex;
             flex-direction: column;
             
-            width: 65%;
+            max-width: 65%;
             height: 80%;
             padding: 1rem;
         }
@@ -194,6 +196,7 @@ a {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            flex-direction: row;
             padding-left: 4.5rem;
             padding-right: 4.5rem;
         }
@@ -202,7 +205,7 @@ a {
             display: inline-flex;
             flex-direction: column;
             text-align: left;
-            width: 30%;
+            max-width: 30%;
             padding: 1rem;
         }
 
@@ -216,6 +219,58 @@ a {
             align-self: center;
         }
 
+        .desktop-thesis-section {
+            width: 100%;
+        }
+
+        .thesis-header-container {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .thesis-main-container {
+            display: flex;
+        }
+
+        .thesis-left-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 60%;
+            padding: 1.5rem;
+        }
+
+        .video-container {
+            display: flex;
+        }
+
+        .video-container video {
+            object-fit: fill;
+            width: 100%;
+            align-self: center;
+        }
+
+        .thesis-right-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 40%;
+        }
+
+        .thesis-content-container {
+            display: inline-flex;
+            flex-direction: row;
+        }
+
+        .thesis-photo-container {
+            display: flex;
+            max-width: 35%;
+            padding: 1rem;
+        }
+
+        .thesis-photo-container img {
+            object-fit: fill;
+            width: 100%;
+            align-self: center;
+        }
 }
 
 
@@ -227,7 +282,8 @@ a {
 
         .desktop-header-container, 
         .desktop-information,
-        .desktop-courses-section {
+        .desktop-courses-section,
+        .desktop-thesis-section {
             display: none;
 
         }
