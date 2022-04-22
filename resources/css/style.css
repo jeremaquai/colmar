@@ -25,6 +25,18 @@ a {
     text-decoration: none;
 }
 
+img {
+    object-fit: fill;
+    width: 100%;
+    align-self: center;
+}
+
+video {
+    object-fit: fill;
+    width: 100%;
+    align-self: center;
+}
+
 /* Desktop styles */
 @media only screen and (min-width: 480px) {
 
@@ -94,12 +106,6 @@ a {
             padding: 2rem 2rem;
         }
 
-        .large-photo-container img {
-            object-fit: fill;
-            width: 100%;
-            align-self: center;
-        }
-
         /*text and button side*/
         .learning-text-container {
             display: inline-flex;
@@ -126,6 +132,7 @@ a {
         .desktop-information {
             display: flex;
             width: 100%;
+            padding: 2rem;
         }
 
         /* left side of information section*/
@@ -135,6 +142,11 @@ a {
             max-width: 60%;
             align-content: center;
             justify-content: center;
+            padding: 2rem;
+        }
+
+        .desktop-information .left-side-container h2 {
+            padding: 2rem;
         }
 
         .desktop-information .left-side-container .left-side-text-container {
@@ -143,16 +155,25 @@ a {
             padding-left: 1.5rem;
         }
 
+        .left-side-container .left-side-text-container h2 {
+            padding-top: 2rem;
+            padding-bottom: 1.5rem;
+        }
+
         .desktop-information .left-side-container .large-photo-container {
             max-width: 100%;
             display: flex;
+            padding: 0;
         }
+
+        
 
         /* right side of information section*/
         .desktop-information .right-side-container {
             display: flex;
             flex-direction: column;
             max-width: 40%;
+            padding: 2rem;
         }
 
         .desktop-information .right-side-container .right-side-container-contents {
@@ -171,17 +192,9 @@ a {
         .contents-text-container {
             display: inline-flex;
             flex-direction: column;
-            
             max-width: 65%;
-            height: 80%;
+            height: auto;
             padding: 1rem;
-        }
-
-
-        .contents-photo-container img {
-            object-fit: fill;
-            width: 100%;
-            align-self: center;
         }
 
         /* Courses Section*/
@@ -201,22 +214,20 @@ a {
             padding-right: 4.5rem;
         }
 
+        .course-heading-text {
+            padding: 2rem;
+        }
+
         .course-container {
             display: inline-flex;
             flex-direction: column;
             text-align: left;
             max-width: 30%;
-            padding: 1rem;
+            padding: 0rem 1rem 2rem;
         }
 
         .course-photo-container {
             display: flex;
-        }
-
-        .course-photo-container img {
-            object-fit: fill;
-            width: 100%;
-            align-self: center;
         }
 
         .desktop-thesis-section {
@@ -243,12 +254,6 @@ a {
             display: flex;
         }
 
-        .video-container video {
-            object-fit: fill;
-            width: 100%;
-            align-self: center;
-        }
-
         .thesis-right-container {
             display: flex;
             flex-direction: column;
@@ -266,10 +271,11 @@ a {
             padding: 1rem;
         }
 
-        .thesis-photo-container img {
-            object-fit: fill;
-            width: 100%;
-            align-self: center;
+        .thesis-content-text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
         }
 }
 
@@ -334,11 +340,6 @@ a {
             width: 100%;
         }
 
-        .large-photo-container img {
-            object-fit: fill;
-            width: 100%;
-        }
-
         /*text section*/
         .learning-text-container {
             display: inline-flex;
@@ -380,12 +381,6 @@ a {
             width: 100%;
         }
 
-        .mobile-information-contents-photo-container img {
-            object-fit: fill;
-            width: 100%;
-            align-self: center;
-        }
-
         /* mobile information section text container styles*/
         .mobile-information-contents-text-container {
             display: inline-flex;
@@ -421,4 +416,18 @@ a {
             color: black;
             font-size: 1.5rem;
         }
+
+        .mobile-thesis-section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-top: 2rem;
+        }
+
+        .mobile-thesis-video-container {
+            display: flex;
+            padding: 1.5rem;
+        }
+
+        .
 }
