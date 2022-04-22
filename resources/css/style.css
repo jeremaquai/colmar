@@ -277,6 +277,24 @@ video {
             justify-content: space-around;
             
         }
+
+        .footer-container {
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .footer-nav {
+            display: inline-flex;
+            justify-content: space-around;
+            max-width: 30%;
+        }
+
+        .footer-nav a {
+            padding-left: 1.5rem;
+        }
 }
 
 
@@ -289,7 +307,8 @@ video {
         .desktop-header-container, 
         .desktop-information,
         .desktop-courses-section,
-        .desktop-thesis-section {
+        .desktop-thesis-section,
+        .footer-nav {
             display: none;
 
         }
@@ -429,5 +448,7 @@ video {
             padding: 1.5rem;
         }
 
-        .
+        .copyright {
+            padding: 1rem;
+        }
 }
